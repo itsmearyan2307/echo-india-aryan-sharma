@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted for space between content and image */
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* Initial gap between buttons */
+    padding-left: 75px;
+    margin-top: 120px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    position: relative;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer;
+    background-color: #fff; /* White background */
+    color: #3498db; /* Light blue text color */
+    border: 1px solid #3498db; /* Thin light blue border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+    button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+        color: #666; /* Adjust the color for disabled state */
+        border: 1px solid #ccc; /* Adjust the border color for disabled state */
+    }
+
+.or-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Adjust the margin-top as needed */
+}
+
+.or-circle-text {
+    width: 30px; /* Adjust the width of the circle */
+    height: 30px; /* Adjust the height of the circle */
+    background-color: #ccc; /* Gray background color */
+    color: #fff; /* White text color */
+    border-radius: 50%; /* Circle shape */
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the image container */
+.image-container {
+    max-width: 300%; /* Adjust the maximum width of the image container */
+    margin-right: 333px; /* Adjust the left margin */
+}
+
+    .image-container img {
+        width: 175%; /* Make the image fill the container */
+        height: auto; /* Maintain aspect ratio */
+    }
